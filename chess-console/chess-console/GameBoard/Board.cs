@@ -16,5 +16,10 @@ namespace chess_console.GameBoard
             Colunas = colunas;
             pieces = new Piece[linhas, colunas];
         }
+
+        public Piece piece(int linha, int coluna)
+        {
+            return pieces[linha, coluna];
+        }
     }
 }
